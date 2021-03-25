@@ -102,11 +102,11 @@ seleksi_survivor()
 print('Generasi', generasi)
 print('Best', populasi[0])
 
-arr_fit = [0]*1000
+arr_fit = [0]*120
 
 arr_fit[generasi-1] = fitness(populasi[0].x, populasi[0].y)
 
-while generasi < 1000:
+while generasi < 120:
     c = Kromosom()
     orangtua = seleksi_orangtua(2)
     Crossover(orangtua[0], orangtua[1])
